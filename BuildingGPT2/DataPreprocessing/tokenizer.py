@@ -51,11 +51,11 @@ class GPT2Tokenizer(BaseTokenizer):
         super().__init__()
         self.tokenizer = tiktoken.get_encoding("gpt2")
 
-    def encode(self, text):
-        return self.tokenizer.encode(text)
+    def encode(self, text, **kwargs):
+        return self.tokenizer.encode(text, **kwargs)
 
-    def decode(self, ids):
-        return self.tokenizer.decode(ids)
+    def decode(self, ids, **kwargs):
+        return self.tokenizer.decode(ids, **kwargs)
 
 # "gpt2": tiktoken.get_encoding("gpt2"),
 # "gpt3": tiktoken.get_encoding("p50k_base"),  # Commonly associated with GPT-3 models

@@ -1,6 +1,6 @@
 from AttentionMechanism.multihead_attention import MultiHeadAttention
-from BuildingGPT2.LLMArchitecture.feed_forward import FeedForward
-from layer_normalization import LayerNorm
+from LLMArchitecture.feed_forward import FeedForward
+from LLMArchitecture.layer_normalization import LayerNorm
 import torch.nn as nn
 
 class TransformerBlock(nn.Module):

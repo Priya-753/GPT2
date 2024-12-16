@@ -1,6 +1,6 @@
 import torch.nn as nn
-from transformer_block import TransformerBlock
-from layer_normalization import LayerNorm
+from LLMArchitecture.transformer_block import TransformerBlock
+from LLMArchitecture.layer_normalization import LayerNorm
 import torch
 
 class GPTModel(nn.Module):
