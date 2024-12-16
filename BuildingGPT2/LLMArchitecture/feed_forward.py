@@ -1,5 +1,5 @@
 import torch.nn as nn
-from activation_function import GELU
+from LLMArchitecture.activation_function import GELU
 
 class FeedForward(nn.Module):
     def __init__(self, cfg):
